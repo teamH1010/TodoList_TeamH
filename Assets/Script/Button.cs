@@ -22,3 +22,7 @@ public class Button : MonoBehaviour
         }
     }
 }
+
+//これがそちらから見えていればOK
+//青木：新しくブランチを作ってから名前と適当なコメントをつけてPush
+//してみてね↓

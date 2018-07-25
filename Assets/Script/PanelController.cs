@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScrollController : MonoBehaviour
-{
+
+public class PanelController : MonoBehaviour {
 
     [SerializeField]
     RectTransform prefab = null;
 
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        GameObject.Find("CompletePanel").SetActive(false);
+
+        for (int i = 0; i < 2; i++)
         {
             var item = GameObject.Instantiate(prefab) as RectTransform;
             item.SetParent(transform, false);

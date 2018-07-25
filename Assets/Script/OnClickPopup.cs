@@ -18,6 +18,7 @@ public class OnClickPopup : MonoBehaviour {
     public void LoadRemoveSetting()
     {
         GameObject.Find("Canvas").transform.Find("RemovePanel").gameObject.SetActive(true);
+        this.Cancel();
     }
 
 
